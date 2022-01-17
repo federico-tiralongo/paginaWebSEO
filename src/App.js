@@ -1,27 +1,22 @@
-import { useState } from 'react';
-import { useEffect } from 'react';
+//import { useState } from 'react';
+//import { useEffect } from 'react';
 import './App.css';
+import { Footer } from "./components/Footer/Footer";
 import { Cabecera } from "./components/Cabecera/Cabecera";
-import { Cuerpo } from "./components/Cuerpo";
+import { Cuerpo } from "./components/Cuerpo/Cuerpo";
+import { Formulario } from './components/Formulario/Formulario';
 
 
 
 function App() {
-  const [valorAmigo, setValorAmigo] = useState([]);
-  const [nombre, setNombre] = useState([]);
-  const urlApi = " http://localhost:3001/amigos/";
-  const nuevoAmigo = async (urlApi) => {
-    
-    setValorAmigo(valorAmigo);
-  };
-
-  useEffect((respuesta) => nuevoAmigo(urlApi), []);
+  
   return (
     <>
-      <div className="container">
-       
+      <div>
         <Cabecera />
         <Cuerpo />
+        <Formulario/>
+        <Footer/>
       </div>
     </>
   );

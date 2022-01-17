@@ -9,10 +9,9 @@
 	border: none;
 	cursor: pointer;
 	border-radius: 5px;
-	position: relative;
+	position: fixed;
 }
 .cabezera1{
 	background: #007bff;
-	width: 100%;
 	height: 150px;
 }
