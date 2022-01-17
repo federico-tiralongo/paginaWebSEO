@@ -1,0 +1,13 @@
+.footer{
+
+  position: relative;
+  margin-top: -480px;
+  /* negative value of footer height */
+  height: 180px;
+  clear: both;
+ /*Custom styling*/
+  background-color: black;
+  padding: auto;
+  
+}
+
